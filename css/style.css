@@ -1,0 +1,69 @@
+@import url(pie.css);
+@import url(menu.css);
+
+
+.logo {
+    width: 90px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+.img-carrusel {
+    height: 100px;
+    object-fit: cover;
+    border: radius 20px;
+}
+
+
+.categorias {
+    padding: 20 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.categorias h2 {
+    margin-bottom: 40px;
+}
+
+
+.categorias-lista {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.categoria {
+    width: 120px;
+}
+
+.categoria img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.categoria p {
+    font-family: "Lato", sans-serif;
+    margin-top: 10px;
+}
+
+
+body {
+    background-color: #fff0f3 !important;
+}
+
+
+.mi-carrusel {
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mi-carrusel img {
+    height: 600px;
+    object-fit: cover;
+}
