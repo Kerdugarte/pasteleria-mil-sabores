@@ -1,0 +1,54 @@
+.filtro {
+    border-radius: 30px;
+    background-color: #ffff;
+    width: 20%;
+    margin: 15px;
+    padding: 50px 40px;
+}
+
+.text-cate {
+
+    font-family: "lato", sans-serif;
+    line-height: 2.5;
+}
+
+
+.form-check-input {
+    border-color: #e86f9a !important;
+}
+
+.form-check-input:checked {
+    background-color: #e86f9a !important;
+    border-color: #e86f9a !important;
+}
+
+.aplicar-fil {
+    display: block;
+    margin: 0 auto;
+
+    background-color: #9a73c7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.filtro hr {
+    margin: 20px 9px;
+    color: #9a73C7;
+
+}
+
+.precios {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #9a73c7 !important;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background-color: #e4d5f0;
+}

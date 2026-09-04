@@ -1,7 +1,7 @@
 nav {
     background-color: #fff;
-    border-radius: 18px;
-    width: 96%;
+    border-radius: 20px;
+    width: 100%;
     margin: 10px auto;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ nav ul li a.activo {
     width: 220px;
     padding: 10px 18px;
     border: 1px solid #e5dadd;
-    border-radius: 25px;
+    border-radius: 10px;
     outline: none;
     background-color: #fffafa;
 }
