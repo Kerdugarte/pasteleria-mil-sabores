@@ -62,13 +62,13 @@ body {
 
 
 .mi-carrusel {
-    width: 95%;
+    width: 100%;
     margin: 10px auto;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .mi-carrusel img {
-    height: 600px;
+    height: 800px;
     object-fit: cover;
 }
