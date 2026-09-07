@@ -1,0 +1,14 @@
+.texto-general {
+    font-family: "lato", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+
+.letra-Titulos {
+    font-family: "pacifico", cursive;
+    color: #5D4037;
+    text-align: center;
+    margin-top: 15px;
+}
