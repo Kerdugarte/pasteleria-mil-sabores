@@ -1,0 +1,55 @@
+.contedor-mi-cuenta {
+    display: flex;
+    gap: 30px;
+}
+
+.contenedor-derecha {
+    border-radius: 30px;
+    background-color: #e8d5f5;
+    width: 80%;
+    margin: 15px;
+    padding: 50px 20px;
+}
+
+
+
+
+.contenedor-izquierda {
+    border-radius: 30px;
+    background-color: #ffffff;
+    width: 20%;
+    margin: 15px;
+    padding: 50px 20px;
+}
+
+.head-contenerdor {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.icono-contenedor {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+.iconos {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+
+}
+
+.elementos {
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 20px;
+}
+
+.elementos h4 {
+    margin: 0;
+}

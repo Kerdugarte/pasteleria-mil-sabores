@@ -6,6 +6,16 @@
     padding: 50px 40px;
 }
 
+
+
+
+.separador {
+    border: 0;
+    border-top: 3px solid #5D4037;
+    margin: 10px 400px;
+
+}
+
 .text-cate {
 
     font-family: "lato", sans-serif;
@@ -14,28 +24,33 @@
 
 
 .form-check-input {
-    border-color: #e86f9a !important;
+    border-color: #f45b82 !important;
 }
 
 .form-check-input:checked {
-    background-color: #e86f9a !important;
-    border-color: #e86f9a !important;
+    background-color: #f45b82 !important;
+    border-color: #f45b82 !important;
 }
 
 .aplicar-fil {
-    display: block;
-    margin: 0 auto;
-
-    background-color: #9a73c7;
+    background-color: #f45b82;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.aplicar-fil:hover {
+    background-color: #9a73c7;
+
 }
 
 .filtro hr {
-    margin: 20px 9px;
-    color: #9a73C7;
+    border-top: 3px solid #9a73c7;
+    margin: 20px 0px;
+
 
 }
 
@@ -46,7 +61,7 @@
 }
 
 .form-range::-webkit-slider-thumb {
-    background-color: #9a73c7 !important;
+    background-color: #f45b82 !important;
 }
 
 .form-range::-webkit-slider-runnable-track {
@@ -122,8 +137,8 @@
 
 
 .card .btn:hover {
-    background-color: #855fb3;
-    border-color: #855fb3;
+    background-color: #f45b82;
+    border-color: #f45b82;
     color: white;
 }
 
