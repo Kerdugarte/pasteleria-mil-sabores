@@ -8,30 +8,18 @@
 
 
 
-
-.separador {
-    border: 0;
-    border-top: 3px solid #5D4037;
-    margin: 10px 400px;
-
-}
-
-.text-cate {
-
-    font-family: "lato", sans-serif;
-    line-height: 2.5;
-}
-
-
+/* checkbox */
 .form-check-input {
     border-color: #f45b82 !important;
 }
 
+/* checkbox cuando lo precionas*/
 .form-check-input:checked {
     background-color: #f45b82 !important;
     border-color: #f45b82 !important;
 }
 
+/* boton del filtro*/
 .aplicar-fil {
     background-color: #f45b82;
     color: white;
@@ -42,15 +30,16 @@
     margin: 0 auto;
 }
 
+
 .aplicar-fil:hover {
     background-color: #9a73c7;
-
+    /* cuando pasas el cursor boton del filtro*/
 }
 
 .filtro hr {
     border-top: 3px solid #9a73c7;
     margin: 20px 0px;
-
+    /* color separador filtro*/
 
 }
 
@@ -61,15 +50,14 @@
 }
 
 .form-range::-webkit-slider-thumb {
+    /* boton rango de precio */
     background-color: #f45b82 !important;
 }
 
-.form-range::-webkit-slider-runnable-track {
-    background-color: #e4d5f0;
-}
 
 
 
+/* contenedor de filtro y productos */
 .productos-contenedor {
     display: flex;
     align-items: flex-start;
@@ -77,18 +65,24 @@
     gap: 50px;
 }
 
+
+/* contenedor de TODAS las tarjetas  */
 .tarjetas-contenedor {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     margin: 30px;
+
     flex: 1;
 }
 
+
+/* contenedor de cada tarjeta */
 .tarjetas-contenedor .card {
     width: 13rem;
     border-radius: 18px;
     padding: 10px;
+    /* color de las tarjetas de productos */
 }
 
 
@@ -107,23 +101,29 @@
 .card-title {
     font-size: 16px;
     margin-bottom: 5px;
+    min-height: 40px;
 }
+
+
 
 
 /* precio */
 .card-body p {
     font-size: 15px;
     margin-bottom: 10px;
+
 }
 
 
 .card-body {
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
 
+/* boton de tarjetas de  productos*/
 .card .btn {
     font-size: 14px;
     padding: 6px 16px;
@@ -132,11 +132,14 @@
     background-color: #9a73c7;
     border-color: #9a73c7;
     color: white;
+    /* letra boton*/
+
 }
 
 
 
 .card .btn:hover {
+    /* cuando pasas el cursor */
     background-color: #f45b82;
     border-color: #f45b82;
     color: white;

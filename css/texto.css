@@ -12,3 +12,12 @@
     text-align: center;
     margin-top: 15px;
 }
+
+
+/* separador de los titulos */
+.separador {
+    border: 0;
+    border-top: 3px solid #5D4037;
+    margin: 10px 400px;
+
+}
