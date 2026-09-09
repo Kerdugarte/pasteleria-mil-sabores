@@ -5,11 +5,25 @@
 @import url(texto.css);
 @import url(contacto.css);
 
-.logo {
-    width: 90px;
-    display: block;
-    margin: 0 auto 15px;
+
+
+/* sección carrusel  */
+.mi-carrusel {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 25px;
+    overflow: hidden;
 }
+
+.mi-carrusel img {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+/* sección categorias  */
+
 
 .categorias {
     background-color: #ffffff;
@@ -57,17 +71,16 @@ body {
 }
 
 
-.mi-carrusel {
-    width: 100%;
-    margin: 10px auto;
-    border-radius: 25px;
-    overflow: hidden;
-}
 
-.mi-carrusel img {
-    height: 500px;
-    object-fit: cover;
-}
+
+
+
+/* sección Historia */
+
+
+
+
+
 
 
 .historia-inicio {
