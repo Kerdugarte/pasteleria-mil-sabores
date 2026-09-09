@@ -11,393 +11,395 @@
 </head>
 
 <body>
-
-    <nav class="menu">
-
-
-        <ul>
-            <li><img src="img/logoLetra.png" class="menu-logo"></li>
-            <li><a href="index.html" class="">Inicio</a></li>
-            <li><a href="productos.html" class="">Productos</a></li>
-            <li><a href="nosotros.html" class="">Nosotros</a></li>
-            <li><a href="mi_cuenta.html" class=""><img src="img/icono-perfil.png" class="img-iconos"></a>
-            </li>
-            <li><a href="carrito.html" class=""><img src="img/icono-carro.png" class="img-iconos"></a></li>
-        </ul>
-
-        <div class="buscador">
-            <input type="text" placeholder="Buscar productos...">
-        </div>
+    <header>
+        <nav class="menu">
 
 
-    </nav>
+            <ul>
+                <li><img src="img/logoLetra.png" class="menu-logo"></li>
+                <li><a href="index.html" class="">Inicio</a></li>
+                <li><a href="productos.html" class="">Productos</a></li>
+                <li><a href="contacto.html" class="">Contacto</a></li>
+                <li><a href="mi_cuenta.html" class=""><img src="img/icono-perfil.png" class="img-iconos"></a>
+                </li>
+                <li><a href="carrito.html" class=""><img src="img/icono-carro.png" class="img-iconos"></a></li>
+            </ul>
 
-
-    <h1 class="letra-Titulos">Nuestros Productos </h1>
-    <p class="texto-general">Encuentra el dulce perfecto para cada ocasión</p>
-    <hr class="separador">
-
-    <section class="productos-contenedor">
-        <section class="filtro">
-            <div>
-                <h4 class="texto-general">Categorias</h4>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="cuadradas">
-                    <label class="form-check-label" for="cuadradas">
-                        Tortas cuadradas
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="circulares">
-                    <label class="form-check-label" for="circulares">
-                        Tortas circulares
-                    </label>
-                </div>
-
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="individuales">
-                    <label class="form-check-label" for="individuales">
-                        Postres individuales
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="sin-azucar">
-                    <label class="form-check-label" for="sin-azucar">
-                        Postres sin azúcar
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="tradicional">
-                    <label class="form-check-label" for="tradicional">
-                        Pastelería tradicional
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="sin-gluten">
-                    <label class="form-check-label" for="sin-gluten">
-                        Postres sin gluten
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="veganos">
-                    <label class="form-check-label" for="veganos">
-                        Postres veganos
-                    </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="especiales">
-                    <label class="form-check-label" for="especiales">
-                        Tort
-                    </label>
-                </div>
-
-            </div>
-
-            <hr>
-
-            <h4 class="texto-general">Rango de precio</h4>
-
-            <input type="range" class="form-range" min="1000" max="25000" id="precio">
-
-            <div class="precios">
-                <span>$1.000</span>
-                <span>$25.000</span>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar productos...">
             </div>
 
 
-            <hr>
-            <div>
-                <button type="button" class="aplicar-fil">Aplicar filtro</button>
-            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="letra-Titulos">Nuestros Productos </h1>
+        <p class="texto-general">Encuentra el dulce perfecto para cada ocasión</p>
+        <hr class="separador">
+
+        <section class="productos-contenedor">
+            <section class="filtro">
+                <div>
+                    <h4 class="texto-general">Categorias</h4>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuadradas">
+                        <label class="form-check-label" for="cuadradas">
+                            Tortas cuadradas
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="circulares">
+                        <label class="form-check-label" for="circulares">
+                            Tortas circulares
+                        </label>
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="individuales">
+                        <label class="form-check-label" for="individuales">
+                            Postres individuales
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="sin-azucar">
+                        <label class="form-check-label" for="sin-azucar">
+                            Postres sin azúcar
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tradicional">
+                        <label class="form-check-label" for="tradicional">
+                            Pastelería tradicional
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="sin-gluten">
+                        <label class="form-check-label" for="sin-gluten">
+                            Postres sin gluten
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="veganos">
+                        <label class="form-check-label" for="veganos">
+                            Postres veganos
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="especiales">
+                        <label class="form-check-label" for="especiales">
+                            Tort
+                        </label>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <h4 class="texto-general">Rango de precio</h4>
+
+                <input type="range" class="form-range" min="1000" max="25000" id="precio">
+
+                <div class="precios">
+                    <span>$1.000</span>
+                    <span>$25.000</span>
+                </div>
+
+
+                <hr>
+                <div>
+                    <button type="button" class="aplicar-fil">Aplicar filtro</button>
+                </div>
+
+
+
+            </section>
+
+
+            <section class="tarjetas-contenedor">
+
+                <div class="card">
+                    <img src="img/Torta Cuadrada de Chocolate.jpg" class="card-img-top" alt="Torta cuadrada">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Cuadrada de Chocolate</h5>
+                        <p>$45.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito"
+                            data-nombre="Torta Cuadrada de Chocolate" data-precio="45000"
+                            data-imagen="img/Torta Cuadrada de Chocolate.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/torta cuadrada frutas.jpg" class="card-img-top" alt="Torta cuadrada">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Cuadrada de Frutas</h5>
+                        <p>$50.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito"
+                            data-nombre="Torta Cuadrada de Frutas" data-precio="50000"
+                            data-imagen="img/torta cuadrada frutas.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/Torta Circular de Vainilla.jpg" class="card-img-top" alt="Torta circular">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Circular de Vainilla</h5>
+                        <p>$40.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito"
+                            data-nombre="Torta Circular de Vainilla" data-precio="40000"
+                            data-imagen="img/Torta Circular de Vainilla.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/Torta Circular de Manjar.jpg" class="card-img-top" alt="Torta circular">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Circular de Manjar</h5>
+                        <p>$42.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta Circular"
+                            data-precio="42000" data-imagen="img/Torta Circular de Manjar.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/Mousse de Chocolate.jpg" class="card-img-top" alt="Mousse">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mousse de Chocolate</h5>
+                        <p>$5.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Mousse"
+                            data-precio="5000" data-imagen="img/Mousse de Chocolate.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/tiramisú.jpg" class="card-img-top" alt="tiramisú">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">tiramisú Clásico</h5>
+                        <p>$5.500</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="tiramisú"
+                            data-precio="5500" data-imagen="img/tiramisú.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/Torta Sin Azúcar de Naranja.png" class="card-img-top" alt="Torta Naranja">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Sin Azúcar de Naranja</h5>
+                        <p>$48.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta Naranja"
+                            data-precio="48000" data-imagen="img/Torta Sin Azúcar de Naranja.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card">
+                    <img src="img/Cheesecake.jpg" class="card-img-top" alt="Cheesecake">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cheesecake Sin Azúcar</h5>
+                        <p>$47.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Cheesecake"
+                            data-precio="47000" data-imagen="img/Cheesecake.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/empanada Manzana.png" class="card-img-top" alt="Empanada">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Empanada de Manzana</h5>
+                        <p>$3.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Empanada"
+                            data-precio="3000" data-imagen="img/empanada Manzana.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/Tarta de Santiago.png" class="card-img-top" alt="Tarta Santiago">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tarta de Santiago</h5>
+                        <p>$6.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Tarta Santiago"
+                            data-precio="6000" data-imagen="img/Tarta de Santiago.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/Brownie Sin Gluten.png" class="card-img-top" alt="Brownie">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Brownie Sin Gluten</h5>
+                        <p>$4.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Brownie"
+                            data-precio="4000" data-imagen="img/Brownie Sin Gluten.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/Pan Sin Gluten.png" class="card-img-top" alt="Pan">
+
+                    <div class=" card-body text-center">
+                        <h5 class="card-title">Pan Sin Gluten</h5>
+                        <p>$3.500</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Pan"
+                            data-precio="3500" data-imagen="img/Pan Sin Gluten.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/Torta Vegana de Chocolate.png" class="card-img-top" alt="torta vegana">
+
+                    <div class=" card-body text-center">
+                        <h5 class="card-title">Torta Vegana de Chocolate</h5>
+                        <p>$50.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="torta vegana"
+                            data-precio="50000" data-imagen="img/Torta Vegana de Chocolate.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="img/Galletas Veganas de Avena.png" class="card-img-top" alt="Galletas">
+
+                    <div class=" card-body text-center">
+                        <h5 class="card-title">Galletas Veganas de Avena </h5>
+                        <p>$4.500</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Galletas"
+                            data-precio="4500" data-imagen="img/Galletas Veganas de Avena.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="img/Torta Especial de Cumpleaños.png" class="card-img-top" alt="Torta de Cumpleaños">
+
+                    <div class=" card-body text-center">
+                        <h5 class="card-title">Torta Especial de Cumpleaños </h5>
+                        <p>$55.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta de Cumpleaños"
+                            data-precio="55000" data-imagen="img/Torta Especial de Cumpleaños.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+                    <img src="img/Torta Especial de Boda.png" class="card-img-top" alt="Torta de Boda">
+
+                    <div class=" card-body text-center">
+                        <h5 class="card-title">Torta Especial de Boda </h5>
+                        <p>$60.000</p>
+
+                        <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta de Boda"
+                            data-precio="60000" data-imagen="img/Torta Especial de Boda.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+            </section>
 
 
 
         </section>
 
 
-        <section class="tarjetas-contenedor">
+        <nav class="nav-paginacion" aria-label="Page navigation">
+            <ul class="pagination">
 
-            <div class="card">
-                <img src="img/Torta Cuadrada de Chocolate.jpg" class="card-img-top" alt="Torta cuadrada">
+                <li class="page-item">
+                    <a class="page-link" href="#" id="anterior">&laquo;</a>
+                </li>
 
-                <div class="card-body text-center">
-                    <h5 class="card-title">Torta Cuadrada de Chocolate</h5>
-                    <p>$45.000</p>
+                <li class="page-item">
+                    <a class="page-link" href="#" id="pagina1">1</a>
+                </li>
 
-                    <button type="button" class="btn btn-primary agregar-carrito"
-                        data-nombre="Torta Cuadrada de Chocolate" data-precio="45000"
-                        data-imagen="img/Torta Cuadrada de Chocolate.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
+                <li class="page-item">
+                    <a class="page-link" href="#" id="pagina2">2</a>
+                </li>
 
+                <li class="page-item">
+                    <a class="page-link" href="#" id="siguiente">&raquo;</a>
+                </li>
 
-            <div class="card">
-                <img src="img/torta cuadrada frutas.jpg" class="card-img-top" alt="Torta cuadrada">
+            </ul>
+        </nav>
 
-                <div class="card-body text-center">
-                    <h5 class="card-title">Torta Cuadrada de Frutas</h5>
-                    <p>$50.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta Cuadrada de Frutas"
-                        data-precio="50000" data-imagen="img/torta cuadrada frutas.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/Torta Circular de Vainilla.jpg" class="card-img-top" alt="Torta circular">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Torta Circular de Vainilla</h5>
-                    <p>$40.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito"
-                        data-nombre="Torta Circular de Vainilla" data-precio="40000"
-                        data-imagen="img/Torta Circular de Vainilla.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/Torta Circular de Manjar.jpg" class="card-img-top" alt="Torta circular">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Torta Circular de Manjar</h5>
-                    <p>$42.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta Circular"
-                        data-precio="42000" data-imagen="img/Torta Circular de Manjar.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/Mousse de Chocolate.jpg" class="card-img-top" alt="Mousse">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Mousse de Chocolate</h5>
-                    <p>$5.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Mousse"
-                        data-precio="5000" data-imagen="img/Mousse de Chocolate.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/tiramisú.jpg" class="card-img-top" alt="tiramisú">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">tiramisú Clásico</h5>
-                    <p>$5.500</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="tiramisú"
-                        data-precio="5500" data-imagen="img/tiramisú.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/Torta Sin Azúcar de Naranja.png" class="card-img-top" alt="Torta Naranja">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Torta Sin Azúcar de Naranja</h5>
-                    <p>$48.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta Naranja"
-                        data-precio="48000" data-imagen="img/Torta Sin Azúcar de Naranja.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-
-
-            <div class="card">
-                <img src="img/Cheesecake.jpg" class="card-img-top" alt="Cheesecake">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Cheesecake Sin Azúcar</h5>
-                    <p>$47.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Cheesecake"
-                        data-precio="47000" data-imagen="img/Cheesecake.jpg">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/empanada Manzana.png" class="card-img-top" alt="Empanada">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Empanada de Manzana</h5>
-                    <p>$3.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Empanada"
-                        data-precio="3000" data-imagen="img/empanada Manzana.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/Tarta de Santiago.png" class="card-img-top" alt="Tarta Santiago">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Tarta de Santiago</h5>
-                    <p>$6.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Tarta Santiago"
-                        data-precio="6000" data-imagen="img/Tarta de Santiago.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/Brownie Sin Gluten.png" class="card-img-top" alt="Brownie">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title">Brownie Sin Gluten</h5>
-                    <p>$4.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Brownie"
-                        data-precio="4000" data-imagen="img/Brownie Sin Gluten.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/Pan Sin Gluten.png" class="card-img-top" alt="Pan">
-
-                <div class=" card-body text-center">
-                    <h5 class="card-title">Pan Sin Gluten</h5>
-                    <p>$3.500</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Pan" data-precio="3500"
-                        data-imagen="img/Pan Sin Gluten.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/Torta Vegana de Chocolate.png" class="card-img-top" alt="torta vegana">
-
-                <div class=" card-body text-center">
-                    <h5 class="card-title">Torta Vegana de Chocolate</h5>
-                    <p>$50.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="torta vegana"
-                        data-precio="50000" data-imagen="img/Torta Vegana de Chocolate.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <img src="img/Galletas Veganas de Avena.png" class="card-img-top" alt="Galletas">
-
-                <div class=" card-body text-center">
-                    <h5 class="card-title">Galletas Veganas de Avena </h5>
-                    <p>$4.500</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Galletas"
-                        data-precio="4500" data-imagen="img/Galletas Veganas de Avena.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <img src="img/Torta Especial de Cumpleaños.png" class="card-img-top" alt="Torta de Cumpleaños">
-
-                <div class=" card-body text-center">
-                    <h5 class="card-title">Torta Especial de Cumpleaños </h5>
-                    <p>$55.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta de Cumpleaños"
-                        data-precio="55000" data-imagen="img/Torta Especial de Cumpleaños.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-
-            </div>
-
-
-            <div class="card">
-                <img src="img/Torta Especial de Boda.png" class="card-img-top" alt="Torta de Boda">
-
-                <div class=" card-body text-center">
-                    <h5 class="card-title">Torta Especial de Boda </h5>
-                    <p>$60.000</p>
-
-                    <button type="button" class="btn btn-primary agregar-carrito" data-nombre="Torta de Boda"
-                        data-precio="60000" data-imagen="img/Torta Especial de Boda.png">
-                        Agregar al carrito
-                    </button>
-                </div>
-
-            </div>
-
-
-
-        </section>
-
-
-
-    </section>
-
-
-    <nav class="nav-paginacion" aria-label="Page navigation">
-        <ul class="pagination">
-
-            <li class="page-item">
-                <a class="page-link" href="#" id="anterior">&laquo;</a>
-            </li>
-
-            <li class="page-item">
-                <a class="page-link" href="#" id="pagina1">1</a>
-            </li>
-
-            <li class="page-item">
-                <a class="page-link" href="#" id="pagina2">2</a>
-            </li>
-
-            <li class="page-item">
-                <a class="page-link" href="#" id="siguiente">&raquo;</a>
-            </li>
-
-        </ul>
-    </nav>
-
-
+    </main>
 
 
     <footer>

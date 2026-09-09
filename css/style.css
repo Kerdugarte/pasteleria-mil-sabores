@@ -3,7 +3,7 @@
 @import url(productos.css);
 @import url(cuenta.css);
 @import url(texto.css);
-
+@import url(contacto.css);
 
 .logo {
     width: 90px;
@@ -11,15 +11,8 @@
     margin: 0 auto 15px;
 }
 
-
-.img-carrusel {
-    height: 100px;
-    object-fit: cover;
-    border: radius 20px;
-}
-
-
 .categorias {
+    background-color: #ffffff;
     padding: 20 0;
     margin-top: 20px;
     text-align: center;
@@ -60,18 +53,111 @@
 
 
 body {
-    background-color: #fff0f3 !important;
+    background-color: #fff3fa !important;
 }
 
 
 .mi-carrusel {
     width: 100%;
     margin: 10px auto;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
 }
 
 .mi-carrusel img {
-    height: 800px;
+    height: 500px;
     object-fit: cover;
+}
+
+
+.historia-inicio {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 70px auto;
+    gap: 60px;
+}
+
+
+/* LADO IZQUIERDO */
+
+.historia-texto {
+    width: 45%;
+}
+
+.historia-mini {
+    letter-spacing: 6px;
+    font-size: 14px;
+    color: #5D4037;
+    margin-bottom: 15px;
+}
+
+.historia-texto h2 {
+    font-family: "Pacifico", cursive;
+    color: #5D4037;
+    font-size: 55px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.linea-historia {
+    width: 80px;
+    height: 4px;
+    background-color: #e8b6c5;
+    margin: 25px 0;
+}
+
+
+.historia-texto h2 {
+    font-family: "Pacifico", cursive;
+    color: #5D4037;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.historia-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* BOTÓN */
+
+.boton-visitanos {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 35px;
+
+    background-color: #9a73c7;
+    color: white;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.boton-visitanos:hover {
+    background-color: #855fb3;
+    color: white;
+}
+
+
+/* LADO DERECHO */
+
+.historia-imagen {
+    width: 55%;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
 }
