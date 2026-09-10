@@ -25,7 +25,14 @@ botonesCarrito.forEach(boton => {
 
         localStorage.setItem("carrito", JSON.stringify(carrito));
 
-        alert("Producto agregado al carrito");
+        const mensaje = document.getElementById("mensajeCarrito");
+
+        mensaje.style.display = "block";
+
+        setTimeout(function () {
+            mensaje.style.display = "none";
+        }, 2000);
+
     });
 
 });
