@@ -1,0 +1,63 @@
+.nuevo-usuario-admin {
+    padding: 25px;
+}
+
+.titulo-nuevo-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-nuevo-usuario h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.titulo-nuevo-usuario p {
+    margin-bottom: 0;
+}
+
+.form-usuario {
+    width: 75%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.campo-usuario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.campo-usuario label {
+    font-family: "Lato", sans-serif;
+    margin-bottom: 5px;
+}
+
+.campo-usuario input,
+.campo-usuario select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    outline: none;
+}
+
+.campo-usuario input:focus,
+.campo-usuario select:focus {
+    border-color: #9a73c7;
+}
+
+.fila-usuario {
+    display: flex;
+    gap: 15px;
+}
+
+.botones-form-usuario {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}

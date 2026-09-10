@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Contacto | Pastelería Mil Sabores</title>
+    <title>Pastelería Mil Sabores </title>
 </head>
 
 <body>
-
-
     <header>
         <nav class="menu">
 
@@ -22,9 +20,9 @@
                 <li><a href="index.html" class="texto-general">Inicio</a></li>
                 <li><a href="productos.html" class="texto-general">Productos</a></li>
                 <li><a href="contacto.html" class="texto-general">Contacto</a></li>
-                <li><a href="login.html" id="enlacePerfil"> <img src="img/icono-perfil.png" class="img-iconos"
-                            alt="Mi cuenta"></a></li>
-                <li><a href="carrito.html" class="texto-general"><img src="img/icono-carro.png" class="img-iconos"></a>
+                <a href="login.html" class="texto-general"> <img src="img/icono-perfil.png" class="img-iconos"
+                        alt="Iniciar sesión"> </a></li>
+                <li><a href=" carrito.html" class="texto-general"><img src="img/icono-carro.png" class="img-iconos"></a>
                 </li>
             </ul>
 
@@ -34,81 +32,95 @@
 
 
         </nav>
+
     </header>
 
     <main>
 
-
-        <h1 class="letra-Titulos">Contáctanos </h1>
-        <p class="texto-general">Estamos aquí para ayudarte.</p>
+        <h1 class="letra-Titulos">Bienvenido </h1>
+        <p class="texto-general">Tu rincón más dulce comienza aquí.</p>
         <hr class="separador">
 
-        <section class="contacto-contenedor">
 
-            <div class="contacto-info">
 
-                <div class="info-item">
-                    <img src="img/iconoUbicacion.png" alt="icono ubicacion">
-                    <div>
-                        <h4>Dirección</h4>
-                        <p>Av. Milsabores 1234<br>Santiago, Chile</p>
-                    </div>
-                </div>
 
-                <div class="info-item">
-                    <img src="img/iconocelular.png" alt="icono telefono">
-                    <div>
-                        <h4>Teléfono</h4>
-                        <p>+56 9 1234 5678</p>
-                    </div>
-                </div>
+        <section class="acceso-contenedor">
 
-                <div class="info-item">
-                    <img src="img/iconoimail.png" alt="icono imail">
-                    <div>
-                        <h4>Email</h4>
-                        <p>paste@milsabores.cl</p>
-                    </div>
-                </div>
+            <!-- INICIAR SESIÓN -->
+            <section class="acceso-card">
 
-                <div class="info-item">
-                    <img src="img/iconoreloj.png" alt="icono horario">
-                    <div>
-                        <div>
-                            <h4>Horario de atención</h4>
-                            <p>
-                                Lunes a viernes: 09:00 - 19:00<br>
-                                Sábado: 10:00 - 18:00
-                            </p>
-                        </div>
-                    </div>
+                <h2 class="letra-Titulos">Iniciar sesión</h2>
+                <p class="texto-general">¡Bienvenido de vuelta!</p>
 
-                </div>
-            </div>
+                <form id="formLogin">
 
-            <div class="formulario-contacto">
+                    <label for="emailLogin">Email</label>
+                    <input type="email" id="emailLogin" placeholder="tu@email.com">
 
-                <form id="formContacto">
+                    <label for="passwordLogin">Contraseña</label>
+                    <input type="password" id="passwordLogin" placeholder="********">
 
-                    <input type="text" id="nombre" placeholder="Nombre completo">
+                    <a href="#" class="recuperar">
+                        ¿Olvidaste tu contraseña?
+                    </a>
 
-                    <input type="email" id="email" placeholder="Email">
+                    <button type="submit" class="boton-acceso">
+                        Ingresar
+                    </button>
 
-                    <input type="text" id="asunto" placeholder="Asunto">
+                    <p class="texto-cuenta">
+                        ¿No tienes cuenta?
+                        <a href="#">Regístrate</a>
+                    </p>
 
-                    <textarea id="mensaje" rows="6" placeholder="Mensaje">
-                    </textarea>
+                </form>
 
-                    <button type="submit">
-                        Enviar mensaje
+            </section>
+
+
+            <!-- CREAR CUENTA -->
+            <section class="acceso-card">
+
+                <h2 class="letra-Titulos">Crear cuenta</h2>
+                <p class="texto-general">
+                    Completa tus datos para crear tu cuenta
+                </p>
+
+                <form id="formRegistro">
+
+                    <label for="nombreRegistro">Nombre completo</label>
+                    <input type="text" id="nombreRegistro">
+
+                    <label for="emailRegistro">Email</label>
+                    <input type="email" id="emailRegistro" placeholder="tu@email.com">
+
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento">
+
+                    <label for="passwordRegistro">Contraseña</label>
+                    <input type="password" id="passwordRegistro" placeholder="********">
+
+                    <button type="submit" class="boton-acceso">
+                        Registrarme
                     </button>
 
                 </form>
 
-            </div>
-
+            </section>
         </section>
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
 
@@ -160,9 +172,7 @@
         </div>
 
     </footer>
-
-    <script src="js/formularios.js"> </script>
-    <script src="js/mi_cuenta.js"></script>
+    <Script src="js/formularios.js"></Script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

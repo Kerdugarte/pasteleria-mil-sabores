@@ -1,0 +1,134 @@
+/* PRODUCTOS*/
+
+
+.productos-admin {
+    padding: 25px;
+}
+
+.titulo-productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-productos h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.titulo-productos p {
+    margin-bottom: 0;
+}
+
+.boton-nuevo {
+    background-color: #f45b82;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+.boton-nuevo:hover {
+    background-color: #9a73c7;
+    color: white;
+}
+
+
+/* buscador */
+
+.busqueda-admin {
+    display: flex;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.busqueda-admin input {
+    width: 70%;
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+.busqueda-admin select {
+    width: 30%;
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+
+/* tabla */
+
+.tabla-productos {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabla-productos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-productos th {
+    background-color: #fff0f3;
+    padding: 10px 12px;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+.tabla-productos td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+.img-producto-admin {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* estados */
+
+.estado-activo {
+    background-color: #d9f5e5;
+    color: #27864a;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.estado-inactivo {
+    background-color: #ffe0e8;
+    color: #d81b60;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+
+/* botones */
+
+.boton-editar {
+    background-color: #eadcf8;
+    color: #7b4bb7;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 8px;
+    font-size: 13px;
+}
+
+.boton-eliminar {
+    background-color: #ffe0e8;
+    color: #d81b60;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 8px;
+    font-size: 13px;
+}

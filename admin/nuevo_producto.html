@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+
+    <title>Nuevo producto | Administrador</title>
+</head>
+
+<body>
+
+    <main class="admin-contenedor">
+
+        <section class="menu-admin">
+            <img src="../img/logo.png" class="logo-admin" alt="Pastelería Mil Sabores">
+
+            <div class="opciones-admin">
+                <a href="index.html" class="opcion">Inicio</a>
+                <a href="productos.html" class="opcion activa">Productos</a>
+                <a href="usuarios.html" class="opcion">Usuarios</a>
+            </div>
+
+            <div class="cerrar-admin">
+                <a href="#" id="cerrarSesion" class="opcion">Cerrar sesión</a>
+            </div>
+        </section>
+
+
+        <section class="contenido-admin">
+
+            <div class="barra-admin">
+                <h4 class="texto-general">Panel de administración</h4>
+
+                <div class="perfil-admin">
+                    <img src="../img/icono-perfil.png" alt="Administrador">
+                    <span class="texto-general">Administrador</span>
+                </div>
+            </div>
+
+
+            <div class="nuevo-producto-admin">
+
+                <div class="titulo-nuevo-producto">
+                    <div>
+                        <h1 class="letra-Titulos">Nuevo Producto</h1>
+                        <p class="texto-general">Agrega un nuevo producto a la pastelería.</p>
+                    </div>
+
+                    <a href="productos.html" class="boton-volver">← Volver</a>
+                </div>
+
+
+                <form id="formNuevoProducto" class="form-producto">
+                    <div class="campo-producto">
+                        <label for="nombreProducto">Nombre del producto</label>
+                        <input type="text" id="nombreProducto" placeholder="Ej: Torta de Chocolate" required>
+                    </div>
+
+
+                    <div class="campo-producto">
+                        <label for="categoriaProducto">Categoría</label>
+
+                        <select id="categoriaProducto" required>
+                            <option value="" selected disabled>Seleccionar categoría</option>
+                            <option value="tortas-cuadradas">Tortas cuadradas</option>
+                            <option value="tortas-circulares">Tortas circulares</option>
+                            <option value="postres-individuales">Postres individuales</option>
+                            <option value="sin-azucar">Sin azúcar</option>
+                            <option value="pasteleria-tradicional">Pastelería tradicional</option>
+                            <option value="sin-gluten">Sin gluten</option>
+                            <option value="veganos">Veganos</option>
+                            <option value="especiales">Tortas especiales</option>
+                        </select>
+                    </div>
+
+
+                    <div class="fila-producto">
+
+                        <div class="campo-producto">
+                            <label for="precioProducto">Precio</label>
+                            <input type="number" id="precioProducto" placeholder="Ej: 45000" required>
+                        </div>
+
+                        <div class="campo-producto">
+                            <label for="stockProducto">Stock</label>
+                            <input type="number" id="stockProducto" placeholder="Ej: 10" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo-producto">
+                        <label for="descripcionProducto">Descripción</label>
+
+                        <textarea id="descripcionProducto" rows="4"
+                            placeholder="Escribe una descripción del producto..." required></textarea>
+                    </div>
+
+
+                    <div class="campo-producto">
+                        <label for="imagenProducto">Imagen</label>
+                        <input type="file" id="imagenProducto" accept="image/*">
+                    </div>
+
+
+                    <div class="campo-producto">
+                        <label for="estadoProducto">Estado</label>
+
+                        <select id="estadoProducto">
+                            <option value="activo">Activo</option>
+                            <option value="inactivo">Inactivo</option>
+                        </select>
+                    </div>
+
+
+                    <div class="botones-form-producto">
+                        <a href="productos.html" class="boton-cancelar">Cancelar</a>
+                        <button type="submit" class="boton-guardar">Guardar producto</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

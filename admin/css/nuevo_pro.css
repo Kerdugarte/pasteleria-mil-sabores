@@ -1,0 +1,93 @@
+.nuevo-producto-admin {
+    padding: 25px;
+}
+
+.titulo-nuevo-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-nuevo-producto h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.titulo-nuevo-producto p {
+    margin-bottom: 0;
+}
+
+.boton-volver {
+    text-decoration: none;
+    color: #9a73c7;
+    font-family: "Lato", sans-serif;
+}
+
+.form-producto {
+    width: 75%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.campo-producto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.campo-producto label {
+    font-family: "Lato", sans-serif;
+    margin-bottom: 5px;
+}
+
+.campo-producto input,
+.campo-producto select,
+.campo-producto textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    outline: none;
+}
+
+.campo-producto input:focus,
+.campo-producto select:focus,
+.campo-producto textarea:focus {
+    border-color: #9a73c7;
+}
+
+.fila-producto {
+    display: flex;
+    gap: 15px;
+}
+
+.botones-form-producto {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.boton-cancelar {
+    background-color: #eee;
+    color: #5D4037;
+    padding: 9px 18px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+.boton-guardar {
+    background-color: #f45b82;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+.boton-guardar:hover {
+    background-color: #9a73c7;
+}

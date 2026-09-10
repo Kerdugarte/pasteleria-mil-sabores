@@ -1,166 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Pastelería Mil Sabores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Finalizar compra | Pastelería Mil Sabores</title>
 </head>
 
 <body>
+
     <header>
         <nav class="menu">
 
-
             <ul>
-                <li><img src="img/logoLetra.png" class="menu-logo"></li>
-                <li><a href="index.html" class="texto-general">Inicio</a></li>
-                <li><a href="productos.html" class="texto-general">Productos</a></li>
-                <li><a href="contacto.html" class="texto-general">Contacto</a></li>
-                <li><a href="mi_cuenta.html" class="texto-general"><img src="img/icono-perfil.png"
-                            class="img-iconos"></a></li>
-                <li><a href="carrito.html" class="texto-general"><img src="img/icono-carro.png" class="img-iconos"></a>
+                <li>
+                    <img src="img/logoLetra.png" class="menu-logo" alt="Pastelería Mil Sabores">
                 </li>
 
-                <div class="buscador">
-                    <input type="text" placeholder="Buscar productos...">
-                </div>
+                <li>
+                    <a href="index.html" class="texto-general">Inicio</a>
+                </li>
 
+                <li>
+                    <a href="productos.html" class="texto-general">Productos</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" class="texto-general">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="login.html" id="enlacePerfil">
+                        <img src="img/icono-perfil.png" class="img-iconos" alt="Mi cuenta">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="carrito.html">
+                        <img src="img/icono-carro.png" class="img-iconos" alt="Carrito">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="buscador">
+                <input type="text" placeholder="Buscar productos...">
+            </div>
 
         </nav>
     </header>
 
+
     <main class="container my-5">
-        <h1 class="letra-Titulos text-center mb-4">Finalizar Compra</h1>
+
+        <h1 class="letra-Titulos text-center mb-4">
+            Finalizar Compra
+        </h1>
 
         <form id="form-checkout" onsubmit="realizarPedido(event)">
+
             <div class="row g-4">
 
-                <!-- Columna Izquierda: Formulario de Datos -->
+                <!-- Datos de envío -->
                 <div class="col-lg-8">
 
-                    <!-- Datos de Envío -->
                     <div class="bg-white p-4 rounded shadow-sm mb-4">
-                        <h3 class="letra-Titulos h4 mb-3">1. Datos de Envío</h3>
+
+                        <h3 class="letra-Titulos h4 mb-3">
+                            1. Datos de Envío
+                        </h3>
+
                         <div class="row g-3">
+
                             <div class="col-md-6">
-                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <label for="nombre" class="form-label">
+                                    Nombre Completo
+                                </label>
+
                                 <input type="text" class="form-control" id="nombre" required
                                     placeholder="Ej: Juan Pérez">
                             </div>
+
+
                             <div class="col-md-6">
-                                <label for="telefono" class="form-label">Teléfono</label>
+                                <label for="telefono" class="form-label">
+                                    Teléfono
+                                </label>
+
                                 <input type="tel" class="form-control" id="telefono" required
                                     placeholder="+56 9 1234 5678">
                             </div>
+
+
                             <div class="col-12">
-                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <label for="email" class="form-label">
+                                    Correo Electrónico
+                                </label>
+
                                 <input type="email" class="form-control" id="email" required placeholder="tu@email.com">
                             </div>
+
+
                             <div class="col-md-8">
-                                <label for="direccion" class="form-label">Dirección de Entrega</label>
+                                <label for="direccion" class="form-label">
+                                    Dirección de Entrega
+                                </label>
+
                                 <input type="text" class="form-control" id="direccion" required
                                     placeholder="Calle y número de casa/depto">
                             </div>
+
+
                             <div class="col-md-4">
-                                <label for="comuna" class="form-label">Comuna</label>
+                                <label for="comuna" class="form-label">
+                                    Comuna
+                                </label>
+
                                 <select class="form-select" id="comuna" required>
-                                    <option value="" selected disabled>Seleccionar...</option>
-                                    <option value="santiago">Santiago Centro</option>
-                                    <option value="providencia">Providencia</option>
-                                    <option value="lascondes">Las Condes</option>
-                                    <option value="ñuñoa">Ñuñoa</option>
+
+                                    <option value="" selected disabled>
+                                        Seleccionar...
+                                    </option>
+
+                                    <option value="santiago">
+                                        Santiago Centro
+                                    </option>
+
+                                    <option value="providencia">
+                                        Providencia
+                                    </option>
+
+                                    <option value="lascondes">
+                                        Las Condes
+                                    </option>
+
+                                    <option value="ñuñoa">
+                                        Ñuñoa
+                                    </option>
+
                                 </select>
                             </div>
+
                         </div>
                     </div>
 
-                    <!-- Métodos de Pago -->
+
+                    <!-- Método de pago -->
                     <div class="bg-white p-4 rounded shadow-sm">
-                        <h3 class="letra-Titulos h4 mb-3">2. Método de Pago</h3>
+
+                        <h3 class="letra-Titulos h4 mb-3">
+                            2. Método de Pago
+                        </h3>
+
                         <div class="form-check mb-2">
+
                             <input class="form-check-input" type="radio" name="metodoPago" id="webpay" value="webpay"
                                 checked>
+
                             <label class="form-check-label fw-bold" for="webpay">
                                 Webpay Plus (Débito / Crédito)
                             </label>
+
                         </div>
+
+
                         <div class="form-check mb-2">
+
                             <input class="form-check-input" type="radio" name="metodoPago" id="transferencia"
                                 value="transferencia">
+
                             <label class="form-check-label fw-bold" for="transferencia">
                                 Transferencia Bancaria Directa
                             </label>
+
                         </div>
+
                     </div>
 
                 </div>
 
-                <!-- Columna Derecha: Resumen del Pedido -->
-                <div class="col-lg-4">
-                    <div class="bg-white p-4 rounded shadow-sm sticky-top" style="top: 20px;">
-                        <h3 class="letra-Titulos h4 mb-3">Resumen del Pedido</h3>
 
-                        <!-- Lista rápida de ítems -->
-                        <div class="mb-3 border-bottom pb-2">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <small>Torta Artesanal de Frutilla (x1)</small>
-                                <small class="fw-bold">$15.990</small>
-                            </div>
+                <!-- Resumen del pedido -->
+                <div class="col-lg-4">
+
+                    <div class="bg-white p-4 rounded shadow-sm sticky-top" style="top: 20px;">
+
+                        <h3 class="letra-Titulos h4 mb-3">
+                            Resumen del Pedido
+                        </h3>
+
+
+                        <!-- Aquí aparecen los productos -->
+                        <div id="resumenPedido" class="mb-3 border-bottom pb-2">
                         </div>
+
 
                         <div class="d-flex justify-content-between mb-2">
                             <span>Subtotal</span>
-                            <span>$15.990</span>
+                            <span id="subtotalCheckout">$0</span>
                         </div>
+
+
                         <div class="d-flex justify-content-between mb-2">
                             <span>Envío</span>
-                            <span>$2.990</span>
+                            <span id="envioCheckout">$0</span>
                         </div>
+
 
                         <hr>
 
-                        <div class="d-flex justify-content-between font-weight-bold h5 mb-4">
+
+                        <div class="d-flex justify-content-between h5 mb-4">
+
                             <strong>Total a Pagar</strong>
-                            <strong style="color: #d81b60;">$18.980</strong>
+
+                            <strong id="totalCheckout" style="color: #d81b60;">
+                                $0
+                            </strong>
+
                         </div>
+
 
                         <button type="submit" class="btn btn-primary w-100 py-3 fw-bold"
                             style="background-color: #d81b60; border: none;">
+
                             Confirmar y Pagar
+
                         </button>
+
                     </div>
+
                 </div>
 
             </div>
+
         </form>
+
     </main>
-
-    <script>
-        function realizarPedido(event) {
-            event.preventDefault();
-            alert('¡Gracias por tu compra en Pastelería Mil Sabores! Tu pedido ha sido procesado con éxito.');
-            window.location.href = 'index.html';
-        }
-    </script>
-
-
 
     <footer>
 
         <div class="footer-cols">
-            <div class="footer-columna">
 
+            <div class="footer-columna">
                 <img src="img/logo.png" class="logo" alt="">
-                <p>¡Celebra la dulzura de la vida con Pastelería Mil Sabores!</p>
+
+                <p>
+                    ¡Celebra la dulzura de la vida con Pastelería Mil Sabores!
+                </p>
             </div>
 
-
-
             <div class="footer-columna">
+
                 <h3 class="letra-Titulos">Horarios</h3>
 
                 <ul class="texto-general">
@@ -168,39 +263,42 @@
                     <li>Sábado: 10:00 - 18:00</li>
                     <li>Domingo: Cerrado</li>
                 </ul>
+
             </div>
 
-
-
             <div class="footer-columna">
-                <h3 class="letra-Titulos"> Contacto </h3>
+
+                <h3 class="letra-Titulos">Contacto</h3>
+
                 <ul class="texto-general">
                     <li>+56 9 1234 5678</li>
                     <li>paste@milsabores.cl</li>
                     <li>Santiago, Chile</li>
                 </ul>
+
             </div>
 
-
             <div class="footer-columna">
-                <h3 class="letra-Titulos"> Siguenos </h3>
-                <div>
-                    <img src="img/iconosredes.png" class="redes-sociales" alt="redes">
+                <h3 class="letra-Titulos">Síguenos</h3>
 
-                </div>
-
+                <img src="img/iconosredes.png" class="redes-sociales" alt="Redes sociales">
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+            <p>
+                &copy; 2026 Pastelería Mil Sabores.
+                Todos los derechos reservados.
+            </p>
 
         </div>
-
     </footer>
-
+    <script src="js/carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mi_cuenta.js"></script>
+    <script src="js/checkout.js"></script>
+
 </body>
 
 </html>

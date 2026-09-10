@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+
+    <title>Nuevo usuario | Administrador</title>
+</head>
+
+<body>
+
+    <main class="admin-contenedor">
+
+        <section class="menu-admin">
+            <img src="../img/logo.png" class="logo-admin" alt="Pastelería Mil Sabores">
+
+            <div class="opciones-admin">
+                <a href="index.html" class="opcion">Inicio</a>
+                <a href="productos.html" class="opcion">Productos</a>
+                <a href="usuarios.html" class="opcion activa">Usuarios</a>
+            </div>
+
+            <div class="cerrar-admin">
+                <a href="#" id="cerrarSesion" class="opcion">Cerrar sesión</a>
+            </div>
+        </section>
+
+
+        <section class="contenido-admin">
+
+            <div class="barra-admin">
+                <h4 class="texto-general">Panel de administración</h4>
+
+                <div class="perfil-admin">
+                    <img src="../img/icono-perfil.png" alt="Administrador">
+                    <span class="texto-general">Administrador</span>
+                </div>
+            </div>
+
+
+            <div class="nuevo-usuario-admin">
+
+                <div class="titulo-nuevo-usuario">
+                    <div>
+                        <h1 class="letra-Titulos">Nuevo Usuario</h1>
+                        <p class="texto-general">Agrega un nuevo usuario al sistema.</p>
+                    </div>
+
+                    <a href="usuarios.html" class="boton-volver">← Volver</a>
+                </div>
+
+
+                <form id="formNuevoUsuario" class="form-usuario">
+
+                    <div class="campo-usuario">
+                        <label for="nombreUsuario">Nombre completo</label>
+                        <input type="text" id="nombreUsuario" placeholder="Ej: Ana Pérez" required>
+                    </div>
+
+
+                    <div class="campo-usuario">
+                        <label for="emailUsuario">Correo electrónico</label>
+                        <input type="email" id="emailUsuario" placeholder="correo@email.com" required>
+                    </div>
+
+
+                    <div class="campo-usuario">
+                        <label for="passwordUsuario">Contraseña</label>
+                        <input type="password" id="passwordUsuario" placeholder="********" required>
+                    </div>
+
+
+                    <div class="fila-usuario">
+
+                        <div class="campo-usuario">
+                            <label for="rolUsuario">Rol</label>
+
+                            <select id="rolUsuario" required>
+                                <option value="" selected disabled>Seleccionar rol</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="admin">Administrador</option>
+                            </select>
+                        </div>
+
+
+                        <div class="campo-usuario">
+                            <label for="estadoUsuario">Estado</label>
+
+                            <select id="estadoUsuario">
+                                <option value="activo">Activo</option>
+                                <option value="inactivo">Inactivo</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="botones-form-usuario">
+                        <a href="usuarios.html" class="boton-cancelar">Cancelar</a>
+                        <button type="submit" class="boton-guardar">Guardar usuario</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

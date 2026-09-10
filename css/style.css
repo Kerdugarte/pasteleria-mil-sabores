@@ -4,7 +4,8 @@
 @import url(cuenta.css);
 @import url(texto.css);
 @import url(contacto.css);
-
+@import url(login.css);
+@import url(carrito.css);
 
 
 /* sección carrusel  */
@@ -67,7 +68,7 @@
 
 
 body {
-    background-color: #fff3fa !important;
+    background-color: #fbe3f1 !important;
 }
 
 
